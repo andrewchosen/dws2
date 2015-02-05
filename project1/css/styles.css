@@ -1,6 +1,10 @@
 /* 	Created by: Andrew Lancaster 	*/
 /* 	Date: 2/5/2015 					*/
 
+/*
+Default styles (mobile)
+*/
+
 body {
 	font: 90%/1.4 'Arimo', sans-serif;
 	color: #333;
@@ -121,6 +125,14 @@ footer {
 	border-top: 1px solid #999;
 }
 
+
+/*
+Responsive Styles
+*/
+
+
+/*Tablet*/
+
 @media screen and (min-width: 600px) {
 
 .logo h1 {
@@ -140,6 +152,8 @@ nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
 }
 
 }
+
+/*Tablet landscape*/
 
 @media screen and (min-width: 768px) {
 
@@ -188,6 +202,7 @@ aside {
 
 }
 
+/*Desktop*/
 
 @media screen and (min-width: 1024px) {
 
