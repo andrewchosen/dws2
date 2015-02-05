@@ -1,0 +1,239 @@
+/* 	Created by: Andrew Lancaster 	*/
+/* 	Date: 2/5/2015 					*/
+
+body {
+	font: 90%/1.4 'Arimo', sans-serif;
+	color: #333;
+	max-width: 80%;
+	background: #f0f0f0 url('../images/squairy_light.png');
+	margin: 5% auto;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/*General typography*/
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto Slab', serif;
+}
+
+p {
+	font-weight: bold;
+}
+
+p + p {
+	font-weight: normal;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+/*Logo*/
+
+.logo {
+	text-align: center;
+}
+
+.logo h1 {
+	font-size: 2.5em;
+	-webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+/*Jumbotron*/
+
+#jumbotron {
+	margin-top: 5%px;
+}
+
+#jumbotron img[title="Eyes"]{
+	width: 100%;
+}
+
+/*Main Nav*/
+
+nav {
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav ul li:first-child {
+	display: none;
+}
+
+nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
+	display: block;
+	float: left;
+	color: #333;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.4em;
+	text-decoration: none;
+	text-align: center;
+	width: 50%;
+	margin-bottom: 5%;
+}
+
+nav ul>li>a:hover {
+	color: #ec4646;
+	background: #F5F5F5;
+	-webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+/*Main Content*/
+
+#main {
+	float: left;
+}
+
+/*Sidebar*/
+
+aside .favorites li {
+	list-style-type: none;
+	color: #eee;
+	padding: 3.33333333333333%; /*10px*/
+	background-color: #666;
+	font-size: 0.9em;
+}
+
+aside .favorites li:nth-child(odd){
+	background-color: #555;
+}
+
+/*Footer*/
+
+footer {
+	clear: both;
+	text-align: center;
+	padding-top: 5%;
+	border-top: 1px solid #999;
+}
+
+@media screen and (min-width: 600px) {
+
+.logo h1 {
+	font-size: 3.5em;
+	-webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul li:first-child {
+	display: block;
+}
+
+nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
+	width: 33.33333333%;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+
+body {
+	font-size: 100%;
+	margin: 2.5% auto;
+}
+
+.logo {
+	float: left;
+	width: 62.5%; /*400px*/
+	text-align: left;
+}
+.logo h1 {
+	font-size: 2.5em;
+	-webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+nav {
+	float: left;
+	width: 37.5%; /*225px*/
+	margin-top: 5%; /*30px*/
+}
+
+nav ul li:first-child {
+	display: none;
+}
+
+nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
+	width: 50%;
+}
+
+#main {
+	float: left;
+	width: 66.66666666666667%; /*400px*/
+}
+
+aside {
+	float: left;
+	width: 30.83333333333333%; /*185px*/
+	margin-left: 2.5%;
+}
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+.logo {
+	width: 41.66666666666667%; /*400px*/
+}
+
+.logo h1 {
+	font-size: 3em;
+	-webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+nav {
+	width: 58.33333333333333%; /*560px*/
+	margin-top: 3.125%; /*30px*/
+}
+
+nav ul li:first-child {
+	display: block;
+}
+
+nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
+	width: 29.64285714285714%; /*166px*/
+	padding: 1.78571428571429%; /*10px*/
+}
+
+#main {
+	width: 62.5%; /*600px*/
+	padding: 0 2.08333333333333%; /*0px 20px*/
+}
+
+aside {
+	width: 31.25%; /*300px*/
+	padding: 1.04166666666667%; /*10px*/
+	margin-left: 0;
+}
+
+}
