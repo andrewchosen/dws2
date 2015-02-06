@@ -1,0 +1,69 @@
+/* 	Created by: Andrew Lancaster 	*/
+/* 	Date: 2/5/2015 					*/
+
+body {
+	background: #333 url('../images/binding_dark.png');
+	color: #E0E0E0;
+}
+
+/*Headings*/
+
+h4, h5 {
+	color: #f06934;
+}
+
+/*Header*/
+
+header {
+	margin-top: 15%;
+	text-align: center;
+}
+
+/*Gallery*/
+
+.gallery div {
+	display: none;
+}
+
+.gallery {
+	margin: 5% 0;
+}
+
+.gallery img {
+	width: 100%;
+}
+
+/*Newsletter*/
+
+#newsletter {
+	text-align: center;
+	margin: 5% 0;
+	padding: 5% 0;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+}
+
+/*Footer*/
+
+footer { 
+	text-align: center;
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	.gallery div:first-child{
+		display: block;
+	}
+
+	header {
+		text-align: left;
+	}
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.gallery div{
+		display: block;
+	}
+}
