@@ -1,0 +1,189 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+    body {
+      background: #e5e5e5;
+      font-family: 'Archivo Narrow', sans-serif;
+    }
+
+    /*Links*/
+
+    a, a:link {
+      color: #29ABE2
+    }
+
+    a[href^="http"] {
+      color: #FF931E;
+    }
+
+    /*Headings*/
+
+    h1, h2 {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    h2 {
+      color: #1F80AA;
+    }
+
+    /*Buttons*/
+
+    .btn-primary {
+      background-color: rgba(0,0,0,0.5);
+      border: 2px solid #39C;
+    }
+
+    .btn-primary:hover {
+      background-color: #3399CC;
+      border-color: #39C;
+    }
+
+    /*Main Navigation*/
+
+    .navbar {
+      padding: 1.25% 0;
+      border-radius: 0;
+    }
+
+    a.navbar-brand {
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: .05em;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    /*Jumbotron*/
+
+    .container .jumbotron {
+      background: #1e1e1e url('../images/banner-001.jpg') center;
+      background-size: cover;
+      color: #fff;
+      border-radius: 0;
+      margin-bottom: 0;
+    }
+
+    /*Sections*/
+
+    section {
+      padding: 2.5% 5%;
+    }
+
+    section:nth-child(odd) {
+      background: #efefef;
+    }
+
+    section + section {
+      background: #fcfcfc;
+      margin-top: 2.5%;
+    }
+
+    section#about h2 {
+      color: #FFF;
+    }
+
+    section#about {
+      background: #3399CC;
+      color: #fff;
+      margin-top: 0;
+    }
+
+    section#entries .entry .band {
+      display: inline-block;
+      margin-left: 5%;
+    }
+
+    section#entries .entry {
+      margin-top: 5%;
+    }
+
+    section#entries .entry:first-child {
+      margin-top: 7.5%;
+    }
+
+    footer {
+      text-align: center; 
+      padding: 5% 0;
+    }
+
+/* Small devices (mobile landscape, 600px and up) */
+@media (min-width: 600px) { 
+
+  .entry img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  section#entries .entry .band {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    font-size: 1.5em;
+    padding: 2.5%;
+  }
+
+} 
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+  .entry img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  section#entries .entry .band {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    font-size: 1.5em;
+    padding: 2.5%;
+  }
+
+  section#entries .entry:first-child {
+      margin-top: 5%;
+  }
+
+  .form-control {
+    max-width: 650px;
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  body {
+    font-size: 1.7em;
+  }
+
+  .col-lg-3 {
+    float: right;
+  }
+
+  .entry {
+    font-size: 0.7em;
+  }
+
+}
+
+/* Medium devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  body {
+    font-size: 1.7em;
+  }
+
+  .col-lg-3 {
+    float: right;
+  }
+
+  .entry {
+    font-size: 0.8em;
+  }
+
+}
