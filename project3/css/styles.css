@@ -1,0 +1,277 @@
+/* 	Created by: Andrew Lancaster 	*/
+/* 	Date: 2/5/2015 					*/
+
+/*
+Default styles (mobile)
+*/
+
+body {
+	font: 90%/1.4 'Arimo', sans-serif;
+	color: #333;
+	max-width: 80%;
+	background: #f0f0f0 url('../images/squairy_light.png');
+	margin: 5% auto;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/*General typography*/
+
+h1, h2, h3, h4, h5, fieldset:before {
+	font-family: 'Roboto Slab', serif;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+/*Logo*/
+
+.logo {
+	text-align: center;
+}
+
+.logo h1 {
+	font-size: 2.5em;
+	-webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+/*Main Nav*/
+
+nav {
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav ul li:first-child {
+	display: none;
+}
+
+nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
+	display: block;
+	float: left;
+	color: #333;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.4em;
+	text-decoration: none;
+	text-align: center;
+	width: 50%;
+	margin-bottom: 5%;
+}
+
+nav ul>li>a:hover {
+	color: #ec4646;
+	background: #F5F5F5;
+	-webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+/*Main Content*/
+
+#main {
+	clear:both;
+}
+
+/*Form*/
+
+form {
+	position: relative;
+	text-align: center;
+}
+
+legend {
+	display: none;
+}
+
+fieldset {
+	padding: 2.5%;
+	margin-top: 2.5%;
+	border: 1px solid #999;
+}
+
+fieldset:before {
+	content: attr(title);
+	display: block;
+	font-size: 1.6em;
+	color: #555;
+}
+label {
+	display: inline-block;  
+    cursor: pointer;  
+    position: relative; 
+	margin: 2.5% 1.25% 1.25% 0;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #777;
+}
+
+input, textarea {
+	width: 94%;
+	display: block;
+	padding: 3% 2.5%;
+	border: 0;
+
+}
+
+input[type=checkbox] {  
+    display: none;  
+}
+
+input[type=checkbox] + label {
+	padding: 2.5%;
+}
+
+input[type=checkbox]:checked + label {  
+    background: #191; 
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	width: inherit;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: #fff;
+    width: 95%;
+    height: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #777;
+    width: 10%;
+    height: 20px;
+}
+
+/*Footer*/
+
+footer {
+	clear: both;
+	text-align: center;
+	padding-top: 5%;
+	border-top: 1px solid #999;
+}
+
+
+/*
+Responsive Styles
+*/
+
+
+/*Tablet*/
+
+@media screen and (min-width: 600px) {
+
+.logo h1 {
+	font-size: 3.5em;
+	-webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul li:first-child {
+	display: block;
+}
+
+nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
+	width: 33.33333333%;
+}
+
+}
+
+/*Tablet landscape*/
+
+@media screen and (min-width: 768px) {
+
+body {
+	font-size: 100%;
+	margin: 2.5% auto;
+}
+
+.logo {
+	float: left;
+	width: 62.5%; /*400px*/
+	text-align: left;
+}
+.logo h1 {
+	font-size: 2.5em;
+	-webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+nav {
+	float: left;
+	width: 37.5%; /*225px*/
+	margin-top: 5%; /*30px*/
+}
+
+nav ul li:first-child {
+	display: none;
+}
+
+nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
+	width: 50%;
+}
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1024px) {
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+.logo {
+	width: 41.66666666666667%; /*400px*/
+}
+
+.logo h1 {
+	font-size: 3em;
+	-webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+nav {
+	width: 58.33333333333333%; /*560px*/
+	margin-top: 3.125%; /*30px*/
+}
+
+nav ul li:first-child {
+	display: block;
+}
+
+nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
+	width: 29.64285714285714%; /*166px*/
+	padding: 1.78571428571429%; /*10px*/
+}
+
+}
