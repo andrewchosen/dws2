@@ -15,6 +15,7 @@ body {
 
 #wrapper {
 	width: 100%;
+	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -96,9 +97,9 @@ legend {
 }
 
 fieldset {
-	padding: 2.5%;
-	margin-top: 2.5%;
-	border: 1px solid #999;
+	padding: 5% 0;
+	border: 0;
+	border-top: 3px solid #ccc;
 }
 
 fieldset:before {
@@ -123,7 +124,20 @@ input, textarea {
 	display: block;
 	padding: 3% 2.5%;
 	border: 0;
+	box-shadow: 0px 1px 2px #ccc;
 
+}
+
+select {
+	width: 94%;
+	padding: 3% 2.5%;
+	border: 0;
+	box-shadow: 0px 1px 2px #ccc;
+	margin-top: 3%;
+}
+
+textarea {
+	height: 300px;
 }
 
 input[type=checkbox] {  
@@ -132,6 +146,10 @@ input[type=checkbox] {
 
 input[type=checkbox] + label {
 	padding: 2.5%;
+}
+
+label.job:hover {
+	background: #fff;
 }
 
 input[type=checkbox]:checked + label {  
@@ -161,6 +179,21 @@ input[type="range"]::-webkit-slider-thumb {
     height: 20px;
 }
 
+button[type="submit"] {
+	display: block;
+	background: #333;
+	color: #FFF;
+	padding: 5%;
+	border: 0;
+	width: 100%;
+	margin-top: 10%;
+	font-size: 1.5em;
+}
+
+button[type="submit"]:hover {
+	background: #393939;
+}
+
 /*Footer*/
 
 footer {
@@ -180,21 +213,13 @@ Responsive Styles
 
 @media screen and (min-width: 600px) {
 
-.logo h1 {
-	font-size: 3.5em;
-	-webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    -o-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-}
-
-nav ul li:first-child {
-	display: block;
-}
-
-nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
-	width: 33.33333333%;
-}
+	.logo h1 {
+		font-size: 3.5em;
+		-webkit-transition: 0.4s ease-in-out;
+	    -moz-transition: 0.4s ease-in-out;
+	    -o-transition: 0.4s ease-in-out;
+	    transition: 0.4s ease-in-out;
+	}
 
 }
 
@@ -202,37 +227,62 @@ nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
 
 @media screen and (min-width: 768px) {
 
-body {
-	font-size: 100%;
-	margin: 2.5% auto;
-}
+	body {
+		font-size: 100%;
+		margin: 2.5% auto;
+	}
 
-.logo {
-	float: left;
-	width: 62.5%; /*400px*/
-	text-align: left;
-}
-.logo h1 {
-	font-size: 2.5em;
-	-webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    -o-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-}
+	.logo {
+		float: left;
+		width: 62.5%; /*400px*/
+		text-align: left;
+	}
+	.logo h1 {
+		font-size: 2.5em;
+		-webkit-transition: 0.4s ease-in-out;
+	    -moz-transition: 0.4s ease-in-out;
+	    -o-transition: 0.4s ease-in-out;
+	    transition: 0.4s ease-in-out;
+	}
 
-nav {
-	float: left;
-	width: 37.5%; /*225px*/
-	margin-top: 5%; /*30px*/
-}
+	fieldset:before {
+		text-align: left;
+	}
 
-nav ul li:first-child {
-	display: none;
-}
+	form .group2 {
+		width: 47.5%;
+		float: left;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
 
-nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
-	width: 50%;
-}
+	form .group2:first-child {
+		margin-left: 0;
+	}
+
+	form .group-street {
+		width: 35%;
+		float: left;
+	}
+
+	form .group-city {
+		width: 35%;
+		float: left;
+		margin: 0 5%;
+	}
+
+	form .group-state {
+		width: 20%;
+		float: left;
+	}
+
+	label {
+		float: left;
+	}
+
+	label.job {
+		float: none;
+	}
 
 }
 
@@ -240,38 +290,74 @@ nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
 
 @media screen and (min-width: 1024px) {
 
-h2 {
-	font-size: 2em;
-}
+	.logo {
+		width: 100%;
+	}
 
-h3 {
-	font-size: 1.5em;
-}
+	.logo h1 {
+		display: block;
+		width: 50%;
+		float: left;
+		text-align: left;
+		font-size: 3em;
+		-webkit-transition: 0.4s ease-in-out;
+	    -moz-transition: 0.4s ease-in-out;
+	    -o-transition: 0.4s ease-in-out;
+	    transition: 0.4s ease-in-out;
+	}
 
-.logo {
-	width: 41.66666666666667%; /*400px*/
-}
+	.logo h2 {
+		position: absolute;
+		width: 50%;
+		top: 1.25%;
+		right: 0;
+		text-align: right;
+		-webkit-transition: 0.4s ease-in-out;
+	    -moz-transition: 0.4s ease-in-out;
+	    -o-transition: 0.4s ease-in-out;
+	    transition: 0.4s ease-in-out;
+	}
 
-.logo h1 {
-	font-size: 3em;
-	-webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    -o-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-}
+	h2 {
+		font-size: 2em;
+	}
 
-nav {
-	width: 58.33333333333333%; /*560px*/
-	margin-top: 3.125%; /*30px*/
-}
+	h3 {
+		font-size: 1.5em;
+	}
 
-nav ul li:first-child {
-	display: block;
-}
+	label.job {
+		float: left;
+		clear: both;
+	}
 
-nav ul>li>a, nav ul>li>a:link, nav ul>li>a:visited {
-	width: 29.64285714285714%; /*166px*/
-	padding: 1.78571428571429%; /*10px*/
-}
+	form .group, form .group3 {
+		overflow: auto;
+		clear: both;
+	}
+
+	form .group .group-item {
+		width: 47.5%;
+		float: left;
+		margin: 0; /*reset*/
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+
+	form .group .group-item:first-child {
+		margin-left: 0;
+	}
+
+	button[type="submit"] {
+		display: block;
+		float: right;
+		background: #333;
+		color: #FFF;
+		padding: 1.25%;
+		border: 0;
+		width: 20%;
+		margin: 5% 0;
+		font-size: 1.5em;
+	}
 
 }
